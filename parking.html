@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Slot Management System</title>
+  <link rel="stylesheet" href="./parking.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Parking Slot Management System</h1>
+    <form id="parkingForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="vehicleNumber">Vehicle Number:</label>
+      <input type="text" id="vehicleNumber" required>
+      
+      <label for="checkinTime">Check-in Time:</label>
+      <input type="datetime-local" id="checkinTime" required>
+      
+      <label for="checkoutTime">Check-out Time:</label>
+      <input type="datetime-local" id="checkoutTime">
+      
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <table id="parkingTable">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Vehicle Number</th>
+          <th>Check-in Time</th>
+          <th>Check-out Time</th>
+          <th>Action</th> 
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="./parking.js"></script>
+</body>
+</html>
